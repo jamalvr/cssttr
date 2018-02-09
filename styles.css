@@ -1,19 +1,59 @@
 body {
     background-color:#fafafa;
     font-family: sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; 
+}
+
+@font-face {
+    font-family: Ampersand;
+    src: local('Baskerville-Italic'),
+    local('GoudyOldStyleT-Italic'),
+    local('Palatino-Italic'),
+    local('BookAntiqua-Italic');
+    unicode-range: U+26;
+}
+
+h1 {
+    font-family: Ampersand, Helvetica, sans-serif;
 }
 
 a {
     text-decoration: none;
 }
 
-nav {
+h1 {
+    margin: 0 0 10px 0;
+}
+
+article, nav:first-of-type {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 10px;
+}
+
+article {
+    overflow: hidden;
+    padding: 20px;
+    background: linear-gradient(135deg, #09aeea 0%,#1e5799 97%);
+}
+
+nav:first-of-type {
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    border-radius: 4px;
+    align-items: center;
+    grid-column: 1 / span 2;
+    background-color: rgb(48, 48, 48);
+}
+
+nav a, nav:first-of-type, article a, article p {
+    color: #fff
+}
+
+nav:first-of-type h1 {
+    margin: 0;
 }
 
 nav ul {
@@ -24,11 +64,29 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
+    padding: 20px 30px;
 }
 
 nav li ul {
     display: none;
+}
+
+main {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+svg {
+    max-width: 20px;
+}
+
+fieldset {
+    grid-column: 1 / span 2;
 }
