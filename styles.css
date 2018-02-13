@@ -1,10 +1,10 @@
 body {
     background-color:#fafafa;
     font-family: sans-serif;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
-    grid-row-gap: 20px; 
+    grid-row-gap: 20px; */
 }
 
 @font-face {
@@ -33,18 +33,53 @@ article, nav:first-of-type {
     border-radius: 10px;
 }
 
-/* start TIJDELIJK */
-article img {
+main article:nth-child(odd) {
+    padding: 20px;
+    background: #fff;
+}
+
+body > article {
     display: none;
 }
-/* end TIJDELIJK */
 
-
-article {
-    overflow: hidden;
-    padding: 20px;
-    background: linear-gradient(135deg, #09aeea 0%,#1e5799 97%);
+body > article:target {
+    display: block;
+    width: 400px;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: #fff;
 }
+
+body > article:before {
+    content: ""; 
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0; 
+    z-index: 10;
+    display: none;
+}
+
+
+
+/* body > article {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -250px;
+    box-shadow: 0 0 0 50vmax rgba(0,0,0,.8);
+    width: 500px;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+body > article:target {
+    opacity: 1;
+}
+
+body > article:target {
+    display: block;
+    pointer-events: auto;
+} */
 
 nav:first-of-type {
     padding: 0 20px;
@@ -55,7 +90,7 @@ nav:first-of-type {
     background-color: rgb(48, 48, 48);
 }
 
-nav a, nav:first-of-type, article a, article p {
+nav:first-of-type a, nav:first-of-type {
     color: #fff
 }
 

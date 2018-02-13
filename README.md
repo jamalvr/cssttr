@@ -3,7 +3,7 @@
 ## Week 1
 - Alle componenenten plaatsen in de index file
 - Onderzoek doen naar websites met soortgelijke componenten
-- Oefenen / onderzoeken css grids
+- Oefenœen / onderzoeken css grids
 - Styles toegevoegd uit hoofdstuk 5.25
 
 ### To-do V1
