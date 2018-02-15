@@ -71,11 +71,11 @@ main article :nth-child(2) {
     transform: translateY(0);
 }
 
-main article:hover h1 {
+main article:hover h1, main a:focus article h1 {
     transform: translateY(-2em);
 }
 
-main article:hover p{
+main article:hover p, main a:focus article p{
     transform: translateY(0);
 }
 
