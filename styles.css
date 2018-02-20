@@ -1,5 +1,6 @@
+/* Main grid voor de body */
 body {
-    background-color:#fafafa;
+    background-color:#f0f0f0;
     font-family: sans-serif;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -8,6 +9,7 @@ body {
     margin: 0;
 }
 
+/* Ampersand opdracht */
 @font-face {
     font-family: Ampersand;
     src: local('Baskerville-Italic'),
@@ -17,6 +19,7 @@ body {
     unicode-range: U+26;
 }
 
+/* Header menu  */
 header nav {
     display: flex;
     justify-content: space-between;
@@ -31,12 +34,14 @@ a {
     text-decoration: none;
 }
 
+/* h1 buiten de main */
 body > h1 {
     margin: 0;
     text-align: center;
     grid-column: 1 / span 2;
 }
 
+/* start main content */
 article, header {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -79,6 +84,10 @@ main article:hover p, main a:focus article p{
     transform: translateY(0);
 }
 
+main article:hover::before, main a:focus article::before {
+    filter: brightness(-0.5);
+}
+
 main article :nth-child(3) {
     margin: 0;
     transform: translateY(3em);
@@ -96,6 +105,7 @@ main article::before {
     background: linear-gradient(to bottom, rgba(135,135,135,0.36) 0%, rgba(135,135,135,0.35) 0%, rgba(0,0,0,0.35) 100%);
     /* background: rgba(0, 0, 0, 0.500); */
     position: absolute;
+    transition: all 0.3s;
 }
 
 body > article {
@@ -159,7 +169,7 @@ nav:first-of-type a, nav:first-of-type {
 
 nav:first-of-type h1 {
     margin: 0;
-    padding: 1em;
+    padding: 0 1em;
 }
 
 nav ul {
@@ -179,11 +189,14 @@ nav ul li ul {
     position: absolute;
     min-width: 8em;
     background-color:black;
+    width: 100%;
+    z-index: 999;
 }
 
 nav > ul > li {
     flex-grow: 1;
     flex-basis: 0;
+    position: relative;
 }
 
 nav ul li a {
@@ -214,7 +227,7 @@ main {
     grid-column: 1 / span 2;
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     grid-column-gap: 2em;
     grid-row-gap: 2em;
     padding: 0 1em;
@@ -236,6 +249,84 @@ body > form {
     background: blue;
 }
 
-body > section {
+/* Chat */
+body > a {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 1em;
+    padding: 1em;
+    border-radius: 0.5em 0.5em 0 0;
+    box-shadow: 0 -2px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transform: translateY(24.5em);
+    transition: 0.3s ease all;
+}
+
+body > a:hover, body > a:focus {
+    transform: translateY(0);
+}
+
+body > a span {
+    display: block; 
+    font-weight: bold;
+}
+
+textarea {
+    width: 95%;
+    padding: 2.5%;
+    border: 0;
+    background-color: #f0f0f0;
+}
+
+button {
+    width: 100%;
+    padding: 1em 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0.5em;
     background: red;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+ol li {
+    background-color: #f0f0f0;
+    padding: 1em 0.5em; 
+    margin-bottom: 0.5em;
+}
+
+ol li:nth-child(odd) {
+    margin-right: -1em;
+    border-radius: 0.5em 0 0 0.5em;
+    right: 0;
+}
+
+ol li:nth-child(even) {
+    margin-left: -1em;
+    border-radius: 0 0.5em 0.5em 0;
+    left: 0;
+}
+
+ol li p {
+    margin: 0;
+}
+
+ol li footer {
+    font-size: 0.8em;
+}
+
+ol li:nth-child(odd) {
+    text-align: right;
+}
+
+label {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    display: block;
+    min-width: 15em;
 }

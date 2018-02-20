@@ -8,6 +8,7 @@
     <title>CSSTTR</title>
 
     <link rel="stylesheet" href="styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
 
@@ -19,7 +20,7 @@
         <ul>
             <li><a href="#main-content" aria-label="Home, current page">Home</a></li>
             <li>
-                <a href="#products">Products</a>
+                <a href="#products">Products <i class="fas fa-angle-down"></i></a>
 
                 <ul>
                     <li><a href="#products/rock">Rock</a></li>
@@ -300,53 +301,56 @@
 <!-- end - modals -->
 
 <!-- start - chat -->
-<section>
-    <ol>
-        <li>
+    <a href="#">
+        <section>
+            <span>Real libi chat <i class="fas fa-comments"></i>            </span>
+            <ol>
+                <li>
 
-            <p>
-                Hey!
-            </p>
+                    <p>
+                        Hey!
+                    </p>
 
-            <footer>
-                <p>Posted on <time datatime="2015-01-22T10:25">10:25 AM</time> by you</p>
-                <p data-status="READ">Has been read</p>
-            </footer>
+                    <footer>
+                        <p>Posted on <time datatime="2015-01-22T10:25">10:25 AM</time> by you</p>
+                        <p data-status="READ">Has been read</p>
+                    </footer>
 
-        </li>
-        <li>
+                </li>
+                <li>
 
-            <p>
-                Hey! Sorry I was busy
-            </p>
+                    <p>
+                        Hey! Sorry I was busy
+                    </p>
 
-            <footer>
-                <p>Posted on <time datatime="2017-02-03T14:19">2:19 PM</time> by John</p>
-            </footer>
+                    <footer>
+                        <p>Posted on <time datatime="2017-02-03T14:19">2:19 PM</time> by John</p>
+                    </footer>
 
-        </li>
-        <li>
-            <p>
-                I sent that 2 years ago
-            </p>
+                </li>
+                <li>
+                    <p>
+                        I sent that 2 years ago
+                    </p>
 
-            <footer>
-                <p>Posted on <time datatime="2017-02-03T14:22">2:22 PM</time> by you</p>
-                <p data-status="DELIVERED">Has been delivered</p>
-            </footer>
-        </li>
-    </ol>
+                    <footer>
+                        <p>Posted on <time datatime="2017-02-03T14:22">2:22 PM</time> by you</p>
+                        <p data-status="DELIVERED">Has been delivered</p>
+                    </footer>
+                </li>
+            </ol>
 
-    <form action="/" method="post">
+            <form action="#" method="post">
 
-        <label for="field-message">Message</label>
-        <textarea name="field-message" id="field-message"></textarea>
+                <label for="field-message">Message</label>
+                <textarea name="field-message" id="field-message"></textarea>
 
-        <button type="submit">Send</button>
+                <button type="submit">Send</button>
 
-    </form>
-    <!-- end - chat -->
-</section>
+            </form>
+            <!-- end - chat -->
+        </section>
+    </a>
 
 </body>
 </html>
