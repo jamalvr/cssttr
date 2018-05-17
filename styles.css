@@ -108,6 +108,7 @@ main article::before {
     transition: all 0.3s;
 }
 
+/* Modal - container */
 body > article {
     visibility: hidden;
     position: fixed;
@@ -118,20 +119,28 @@ body > article {
     box-shadow: 0 0 0 50vmax rgba(0,0,0,.8);
     padding: 1em;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in, visibility 0.2s ease-out;
+    z-index: 999;
+    display: flex;
 }
 
 body > article:target {
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.3s ease-in-out;
 }
 
+/* Modal - img */
 body > article img {
     width: 100%;
 }
 
-body > article > a {
+/* Modal - close icon */
+body > article > a:first-of-type {
+    display: block;
+}
+
+/* Modal - big button */
+body > article > a:last-of-type {
     display: block;
     padding: 15px 20px;
     text-align: center;
@@ -140,29 +149,12 @@ body > article > a {
     background-color: blue;
 }
 
+/* Modal - figure */
 figure {
     margin: 0;
 }
 
-/* body > article:before {
-    content: ""; 
-    background: rgba(0,0,0,.6);
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0; 
-    z-index: 456;
-}
-
-body > article {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin: -250px;
-    box-shadow: 0 0 0 50vmax rgba(0,0,0,.8);
-    width: 500px;
-    opacity: 0;
-    transition: 0.3s all;
-} */
-
+/* start nav */
 nav:first-of-type a, nav:first-of-type {
     color: #fff
 }
@@ -180,14 +172,18 @@ nav ul {
 
 nav > ul {
     display: flex;
-    width: 50%;
+    width: 60%;
     min-width: 20em;
     text-align: center;
 }
+    @media (max-width: 675px) {
+        nav > ul {
+            width: 80%;
+        }   
+    }
 
 nav ul li ul {
     position: absolute;
-    min-width: 8em;
     background-color:black;
     width: 100%;
     z-index: 999;
@@ -223,11 +219,12 @@ ul li:hover ul li a {
     width: 100%;
 }
 
+/* start main grid */
 main {
     grid-column: 1 / span 2;
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17.5em, 1fr));
     grid-column-gap: 2em;
     grid-row-gap: 2em;
     padding: 0 1em;
@@ -250,7 +247,7 @@ body > form {
 }
 
 /* Chat */
-body > a {
+body > section {
     background: #fff;
     position: fixed;
     bottom: 0;
@@ -262,11 +259,11 @@ body > a {
     transition: 0.3s ease all;
 }
 
-body > a:hover, body > a:focus {
+body > section:focus-within {
     transform: translateY(0);
 }
 
-body > a span {
+body > section a {
     display: block; 
     font-weight: bold;
 }
@@ -289,38 +286,26 @@ button {
     font-size: 1rem;
 }
 
-ol {
+body > section ol {
     list-style-type: none;
     padding: 0;
 }
 
-ol li {
+body > section ol li {
     background-color: #f0f0f0;
     padding: 1em 0.5em; 
     margin-bottom: 0.5em;
 }
 
-ol li:nth-child(odd) {
-    margin-right: -1em;
-    border-radius: 0.5em 0 0 0.5em;
-    right: 0;
-}
-
-ol li:nth-child(even) {
-    margin-left: -1em;
-    border-radius: 0 0.5em 0.5em 0;
-    left: 0;
-}
-
-ol li p {
+body > section ol li p {
     margin: 0;
 }
 
-ol li footer {
+body > section ol li footer {
     font-size: 0.8em;
 }
 
-ol li:nth-child(odd) {
+body > section ol li:nth-child(odd) {
     text-align: right;
 }
 
