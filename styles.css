@@ -160,11 +160,6 @@ dialog > a:last-of-type {
     background-color: blue;
 }
 
-/* Figure */
-figure {
-    margin: 0;
-}
-
 /*   nav */
 nav:first-of-type a, nav:first-of-type {
     color: #fff
@@ -264,8 +259,17 @@ main section:nth-child(2) a {
 
 main section:nth-child(2) figure {
     position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+main section:nth-child(2) figure a {
     display: flex;
     align-items: center;
+}
+
+main section:nth-child(2) figure img { 
+    object-fit: cover;
 }
 
 main section:nth-child(2) h1, main section:nth-child(2) figcaption {
@@ -282,6 +286,7 @@ main section:nth-child(2) h1 {
 
 section:nth-child(2) figcaption {
     margin: 1em;
+    bottom: 0;
 }
 
 
