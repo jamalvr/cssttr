@@ -47,7 +47,7 @@ header {
     background-color: rgb(48, 48, 48);
 }
 
-main article {
+main section:first-child article {
     background: #fff;
     position: relative;
     overflow: hidden;
@@ -90,11 +90,11 @@ main article:hover p, main a:focus article p{
     transform: translateY(0);
 }
 
-main article:hover::before, main a:focus article::before {
+main section:first-child article:hover::before, main section:first-child a:focus article::before {
     filter: brightness(0);
 }
 
-main article:nth-child(odd):hover, main a:nth-child(odd):focus {
+main section:first-child article:hover, main section:first-child a:focus {
     transform: scale(1.05) rotate(1deg);
 }
 
@@ -264,11 +264,27 @@ main section:nth-child(2) a {
 
 main section:nth-child(2) figure {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 main section:nth-child(2) h1, main section:nth-child(2) figcaption {
     position: absolute;
 }
+
+main section:nth-child(2) h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 3.5em;
+    margin: 0.5em;
+}
+
+
+section:nth-child(2) figcaption {
+    margin: 1em;
+}
+
+
 
 /* Chat */
 body > section {
