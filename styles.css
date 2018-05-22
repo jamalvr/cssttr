@@ -260,8 +260,14 @@ dialog fieldset {
     padding: 1em 0;
 }
 
-dialog fieldset label span, dialog fieldset legend, dialog fieldset input[type="radio"] {
+dialog fieldset label span, dialog fieldset legend {
     display: none;
+}
+
+dialog fieldset input[type="radio"] {
+    position: absolute;
+	z-index: -1;
+	opacity: 0;
 }
 
 dialog label {
@@ -385,7 +391,7 @@ body > form {
 /* secondary grid  */
 main section:nth-child(2) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
 }
 
 main section:nth-child(2) a {
@@ -430,6 +436,7 @@ main section:nth-child(2) h1 {
     color: #fff;
     font-size: 2.5em;
     z-index: 1;
+    padding: 0.5rem;
 }
 
 section:nth-child(2) figcaption {
