@@ -243,21 +243,11 @@ dialog > a:first-of-type:hover, dialog > a:first-of-type:focus {
     transform: rotate(180deg);
 }
 
-/* Modal - big button */
-dialog > a:last-of-type {
-    display: block;
-    padding: 15px 20px;
-    text-align: center;
-    color: #fff;
-    border-radius: 4px;
-    background-color: blue;
-}
-
 /* dialog emoji's fieldset */
 dialog fieldset {
     border: none;
     margin: 0;
-    padding: 1em 0;
+    padding: 1.5em 0 0 0;
 }
 
 dialog fieldset label span, dialog fieldset legend {
@@ -273,6 +263,9 @@ dialog fieldset input[type="radio"] {
 dialog label {
     width: 25%;
     float: left;
+    position: relative;
+    height: 4em;
+    cursor: pointer;
 }
 
 dialog label svg {
@@ -281,8 +274,10 @@ dialog label svg {
     max-width: 3em;
 }
 
-dialog input[type="radio"]:checked + label svg, dialog label:hover svg, dialog label:focus svg {
-    transform: scale(1.1);
+dialog input[type="radio"]:checked + label > svg, dialog fieldset input[type="radio"]:focus + label > svg, dialog label:hover > svg, dialog label:focus > svg {
+    transform: scale(1.25);
+    border: 2px solid red;
+    border-radius: 50px;
 }
 
 /* nav */
@@ -325,15 +320,15 @@ header nav ul li ul li {
 }
 
 header nav ul li ul li:first-child {
-    background-color: orange;
+    background: linear-gradient(to right, #7474BF 0%,#348AC7 100%);
 }
 
 header nav ul li ul li:nth-child(2) {
-    background-color: red;
+    background: linear-gradient(to right, #06beb6 0%,#48b1bf 100%);
 }
 
 header nav ul li ul li:nth-child(3) {
-    background-color: purple;
+    background: linear-gradient(to right, #000046 0%,#1CB5E0 100%);
 }
 
 header nav > ul > li {
@@ -350,7 +345,8 @@ header nav ul li a {
 }
 
 header nav ul li a:focus, nav ul li a:hover {
-    background-color: pink;
+    background-color: rgba(0,0,0,.4);
+    transition: 0.3s background-color ease-in-out;
 }
 
 ul li ul li a, ul li form {
@@ -418,7 +414,7 @@ main section:nth-child(2) figure a {
     align-items: center;
     justify-content: center;
     transition: all .3 ease;
-    color: #fff;
+    color: #fff;    
 }
 
 main section:nth-child(2) figure img { 
