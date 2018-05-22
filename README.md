@@ -35,7 +35,7 @@ Het is een website waar je zogenaamd achtergrondafbeeldingen van OSX kan bekijke
 - ✅ Login scherm uitwerken
 - ✅ Contact / Chat hiden en vervolgens laten zien
 - ❓ Loading spinner — 8.43 ?
-- 🔥 Transitions op :hovers en :focus—8.42
+- ✅ Transitions op :hovers en :focus—8.42
 - ✅ Cursor—6.29
 - ✅ Extending the clickable area—6.30
 - 🔥 Custom checkboxes—6.31
