@@ -18,7 +18,7 @@ Het is een website waar je zogenaamd achtergrondafbeeldingen van OSX kan bekijke
     - ✅ 5.25 Fancy ampersands (font-stack, cascade)
     - ✅ 6.32 De-emphasize by dimming
     - ✅ 6.33 De-emphasize by blurring
-    - :fire: 7.36 Intrinsic Sizing
+    - ✅ 7.36 Intrinsic Sizing
     - ✅ 7.40 Vertical centering
 2. ✅ Texten op de cards eerst hiden, vervolgens showen op hover & focus
 3. ✅ Een deel van de functionaliteiten hiden en vervolgens laten zien via een modal

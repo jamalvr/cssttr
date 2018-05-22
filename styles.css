@@ -417,8 +417,10 @@ main section:nth-child(2) a {
 
 main section:nth-child(2) figure {
     position: relative;
-    margin: 0;
+    margin: auto;
     overflow: hidden;
+    width: min-content;
+    max-width: 50vw;
 }
 
 main section:nth-child(2) figure > a::before {
@@ -428,21 +430,27 @@ main section:nth-child(2) figure > a::before {
     top: 0; left: 0; bottom: 0; right: 0;
     background-color: rgba(0,0,0,.8);
     z-index: 1;
+    transition: background .3s ease;
 }
 
 main section:nth-child(2) figure a {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .3 ease;
     color: #fff;    
 }
 
 main section:nth-child(2) figure img { 
-    object-fit: cover;
+    max-width: inherit;
+    /* object-fit: cover; */
     max-height: 45em;
     filter: blur(5px);
-    transition: .3 filter ease;
+    -webkit-transition: .3s -webkit-filter ease-in-out;
+    -moz-transition: .3s -moz-filter ease-in-out;
+    -moz-transition: .3s filter ease-in-out;
+    -ms-transition: .3s -ms-filter ease-in-out;
+    -o-transition: .3s -o-filter ease-in-out;
+    transition: .3s filter ease-in-out, .3s -webkit-filter ease-in-out;
 }
 
 main section:nth-child(2) h1, main section:nth-child(2) figcaption {
