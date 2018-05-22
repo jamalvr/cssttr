@@ -19,10 +19,10 @@ Het is een website waar je zogenaamd achtergrondafbeeldingen van OSX kan bekijke
     - ✅ 6.32 De-emphasize by dimming
     - ✅ 6.33 De-emphasize by blurring
     - :fire: 7.36 Intrinsic Sizing
-    - :fire: 7.40 Vertical centering
+    - ✅ 7.40 Vertical centering
 2. ✅ Texten op de cards eerst hiden, vervolgens showen op hover & focus
 3. ✅ Een deel van de functionaliteiten hiden en vervolgens laten zien via een modal
-4. :fire: Animaties op buttons (emoticons)
+4. ✅ Animaties op buttons (emoticons)
 5. ✅ Background-image (eventueel parralax) op de cards toevoegen en text anders positioneren met flex-box
 
 ### To-do V2
@@ -31,13 +31,13 @@ Het is een website waar je zogenaamd achtergrondafbeeldingen van OSX kan bekijke
     - ✅ Progress bar 100% width
     - ✅ IMG 100% width met header er bovenop
     - ✅ Emoji's stylen
-    - :fire: :hover / :focus state emoji
+    - ✅ :hover / :focus state emoji
 - ✅ Login scherm uitwerken
 - ✅ Contact / Chat hiden en vervolgens laten zien
-- :fire: Loading spinner — 8.43 ?
-- :fire: Transitions op :hovers en :focus—8.42
+- ❓ Loading spinner — 8.43 ?
+- 🔥 Transitions op :hovers en :focus—8.42
 - ✅ Cursor—6.29
 - ✅ Extending the clickable area—6.30
-- :fire: Custom checkboxes—6.31
-- :fire: (Pseudo)random background—2.7
+- 🔥 Custom checkboxes—6.31
+- 🔥 (Pseudo)random background—2.7
 - ✅ Validatie van het formulier
