@@ -231,9 +231,16 @@ dialog img {
 /* Modal - close icon */
 dialog > a:first-of-type {
     position: absolute;
-    right: 1em;
-    top: 1.5rem;
+    display: flex;
+    right: 0rem;
+    top: 0rem;
     font-size: 1.5em;
+    border: 1em solid transparent;
+    background-clip: content-box;
+}
+
+dialog > a:first-of-type:hover {
+    transform: rotate(180deg);
 }
 
 /* Modal - big button */

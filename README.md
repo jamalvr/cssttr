@@ -10,7 +10,7 @@
 ### To-do V1
 
 1. Styles toevoegen uit hoofdstuk 6.33, 7.36, (7.38), 7.40 van CSS secrets
-    - ✅ 5.25 Fancy mpersands (font-stack, cascade)
+    - ✅ 5.25 Fancy ampersands (font-stack, cascade)
     - ✅ 6.32 De-emphasize by dimming
     - ✅ 6.33 De-emphasize by blurring
     - 7.36 Intrinsic Sizing
@@ -23,11 +23,18 @@
 ### To-do V2
 
 - Modal scherm verder uitwerken
-    - Progress bar 100% width
-    - IMG 100% width met header er bovenop
-    - Emoji's stylen
-- Login scherm uitwerken
+    - ✅ Progress bar 100% width
+    - ✅ IMG 100% width met header er bovenop
+    - ✅ Emoji's stylen
+    - :hover / :focus state emoji
+- ✅ Login scherm uitwerken
 - ✅ Contact / Chat hiden en vervolgens laten zien
+- Loading spinner — 8.43
+- Transitions op :hovers en :focus—8.42
+- ✅ Cursor—6.29
+- ✅ Extending the clickable area—6.30
+- Custom checkboxes—6.31
+- (Pseudo)random background—2.7
 
 ### GitHub Pages
 
