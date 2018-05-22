@@ -188,7 +188,7 @@ dialog:target {
 }
 
 dialog h1 {
-    margin: 0.25em 0;
+    margin: 0.5rem 0;
 }
 
 dialog progress[value] {
@@ -229,12 +229,15 @@ dialog img {
 }
 
 /* Modal - close icon */
-/* dialog > a:first-of-type {
-    display: block;
-} */
+dialog > a:first-of-type {
+    position: absolute;
+    right: 1em;
+    top: 1.5rem;
+    font-size: 1.5em;
+}
 
 /* Modal - big button */
-dialog > a {
+dialog > a:last-of-type {
     display: block;
     padding: 15px 20px;
     text-align: center;
