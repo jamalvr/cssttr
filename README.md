@@ -1,11 +1,16 @@
-# Components
+# CSSTTR Demo
 
-## Week 1
+[NAAR DEMO](https://jamalvr.github.io/cssttr/)
 
-- Alle componenenten plaatsen in de index file
-- Onderzoek doen naar websites met soortgelijke componenten
-- Oefenen / onderzoeken css grids
-- Styles toegevoegd uit hoofdstuk 5.25, 6.32
+Het is een website waar je zogenaamd achtergrondafbeeldingen van OSX kan bekijken/kopen. Het begint met een inlogscherm. Vervolgens kom je op een overzichtspagina met verschillende onderwerpen en een klein overzicht van beschikbare achtergronden. De gebruiker kan of naar een externe website gaan voor meer informatie, of naar het aankoopscherm in de vorm van een dialog om een achtergrond aan te schaffen.
+
+## Components
+
+- Login scherm
+- Menu bar met dropdown
+- Klikbare elementen met een modal/dialog
+- Dialog met 'progress bar', aankoopproces en custom radiobuttons 
+- (grote) Klikbare elementen die doorverwijzen naar de website van Vasilis
 
 ### To-do V1
 
@@ -13,11 +18,11 @@
     - ✅ 5.25 Fancy ampersands (font-stack, cascade)
     - ✅ 6.32 De-emphasize by dimming
     - ✅ 6.33 De-emphasize by blurring
-    - 7.36 Intrinsic Sizing
-    - 7.40 Vertical centering
+    - :fire: 7.36 Intrinsic Sizing
+    - :fire: 7.40 Vertical centering
 2. ✅ Texten op de cards eerst hiden, vervolgens showen op hover & focus
 3. ✅ Een deel van de functionaliteiten hiden en vervolgens laten zien via een modal
-4. Animaties op buttons (emoticons)
+4. :fire: Animaties op buttons (emoticons)
 5. ✅ Background-image (eventueel parralax) op de cards toevoegen en text anders positioneren met flex-box
 
 ### To-do V2
@@ -26,16 +31,13 @@
     - ✅ Progress bar 100% width
     - ✅ IMG 100% width met header er bovenop
     - ✅ Emoji's stylen
-    - :hover / :focus state emoji
+    - :fire: :hover / :focus state emoji
 - ✅ Login scherm uitwerken
 - ✅ Contact / Chat hiden en vervolgens laten zien
-- Loading spinner — 8.43
-- Transitions op :hovers en :focus—8.42
+- :fire: Loading spinner — 8.43 ?
+- :fire: Transitions op :hovers en :focus—8.42
 - ✅ Cursor—6.29
 - ✅ Extending the clickable area—6.30
-- Custom checkboxes—6.31
-- (Pseudo)random background—2.7
-
-### GitHub Pages
-
-[NAAR DEMO](https://jamalvr.github.io/cssttr/)
+- :fire: Custom checkboxes—6.31
+- :fire: (Pseudo)random background—2.7
+- ✅ Validatie van het formulier

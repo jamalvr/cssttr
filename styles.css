@@ -239,7 +239,7 @@ dialog > a:first-of-type {
     background-clip: content-box;
 }
 
-dialog > a:first-of-type:hover {
+dialog > a:first-of-type:hover, dialog > a:first-of-type:focus {
     transform: rotate(180deg);
 }
 
