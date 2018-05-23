@@ -372,7 +372,12 @@ header nav ul li ul li:nth-child(2) {
 }
 
 header nav ul li ul li:nth-child(3) {
-    background: linear-gradient(to right, #000046 0%,#1CB5E0 100%);
+    background: hsl(270, 100%, 25%);
+    background-image: 
+        linear-gradient(90deg, rgb(78, 19, 172) 11px, transparent 0),
+        linear-gradient(90deg, rgb(0, 40, 101) 11px, transparent 0),
+        linear-gradient(90deg, rgb(0, 119, 193) 11px, transparent 0);
+    background-size: 41px 100%, 61px 100%, 83px 100%;
 }
 
 header nav > ul > li {
@@ -445,6 +450,12 @@ main section:nth-child(2) figure {
     width: min-content;
     max-width: 50vw;
 }
+
+    @media (max-width: 959px) {
+        main section:nth-child(2) figure {
+            max-width: 100vw;
+        }   
+    }
 
 main section:nth-child(2) figure > a::before {
     content: '';
